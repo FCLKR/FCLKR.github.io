@@ -59,7 +59,7 @@ a:hover {
     border: 5% solid #05b2f7;
     border-radius: 10px;
     max-width: 520px;
-    margin: 3% 1% 30% 8%;
+    margin: 3% 1% 30% 0%;
     background-color: #ffffff;
     flex-direction: row; /* Alineación horizontal por defecto */
 }
