@@ -18,7 +18,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -51,4 +50,74 @@ a:hover {
 
 .column:nth-child(2) {
     background-color: #d9d9d9; /* Color de fondo para la columna 2 */
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    padding: 0%;
+    border: 5% solid #05b2f7;
+    border-radius: 10px;
+    max-width: 520px;
+    margin: 3% 1% 30% 0%;
+    background-color: #ffffff;
+    flex-direction: row; /* Alineación horizontal por defecto */
+}
+
+.profile-image {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.profile-image img {
+    width: 150px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: 150px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen mantenga sus proporciones */
+}
+
+.profile-description {
+    flex: 1;
+}
+
+.profile-description h2 {
+    margin: 0 0 10px;
+}
+
+.profile-description p {
+    margin: 0;
+}
+
+#changeDescriptionBtn{
+    margin-top: 5%;
+}
+
+/* Media Queries para diseño responsive */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column; /* Cambia a alineación vertical en pantallas más pequeñas */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+
+    .profile-image {
+        margin: 0 0 20px; /* Añade espacio debajo de la imagen en lugar de a la derecha */
+    }
+
+    .profile-image img {
+        width: 120px; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
+        height: 120px; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-image img {
+        width: 100px; /* Ajusta el tamaño de la imagen para pantallas muy pequeñas */
+        height: 100px; /* Ajusta el tamaño de la imagen para pantallas muy pequeñas */
+    }
+}
+/* Nueva clase para el movimiento del botón */
+.move {
+    transform: translateX(10px); /* Mueve el botón 10px a la derecha */
+    transition: transform 0.3s ease; /* Suaviza la transición */
 }
