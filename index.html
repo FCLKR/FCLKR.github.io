@@ -20,9 +20,9 @@
                     <div class="profile-image">
                         <img src=".\Media\img_photo.jpg" alt="Perfil" class="img-fluid">
                     </div>
+
                     <div class="profile-description">
                         <h3>What's about me?</h3>
-                        
                         <p id="description">As a software development technologist, I have a solid background in the design, implementation and maintenance of computer applications and systems.</p>
                         <div>
                             <button id="changeDescriptionBtn" type="button" class="btn btn-warning">Conocer Más</button>
@@ -33,7 +33,11 @@
             </div>
             
             <div class="col-md-1 d-none d-md-block">
-                <div class="vertical-line"></div>
+                
+                <div class="d-flex" style="height: 550px;">
+                    <div class="vertical-line"></div>
+                    <div class="vr"></div>
+                  </div>
             </div>
             
             <div class="col-md-6">
@@ -42,11 +46,11 @@
                         <div class="card mb-3" style="max-width: 540px;">
                             <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="Media/Laravel_Logo.png" class="img-fluid rounded-start" alt="...">
+                                <img src="Media/Laravel_Logo.png" style="height: 82%; width: 100%;" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                <h5 class="card-title">S.I. Web </h5>
+                                <h5 class="card-title" >S.I. Web </h5>
                                 <p class="card-text">It was developed in Laravel 10 with database management from postgres. Management of 3 roles, sending reports request management and more.</p>
                                     <a href="https://github.com/FCLKR/Deploy-Ojitos-PHP" target="_blank" class="btn btn-dark btn-sm">
                                         <i class="fab fa-github"></i> GitHub
@@ -72,6 +76,10 @@
                             </div>
                             </div>
                         </div>
+                        <div style="text-align: center;">
+                            <button type="button" class="btn btn-warning" style="text-align: center;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">More + </button>
+                        </div>
+                        
                 </section>
             </div>
         </div>
@@ -83,6 +91,26 @@
     <footer>
         <p>&copy; 2024 My Portfolio</p>
     </footer>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">More apps</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+                <div class="card" style="width: 18rem; margin-inline: 10%;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+        </div>
+      </div>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
