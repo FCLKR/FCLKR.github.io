@@ -34,3 +34,21 @@ a:hover {
     padding: 10px;
     margin-bottom: 10px;
 }
+
+.container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.column:nth-child(1) {
+    background-color: #f2f2f2; /* Color de fondo para la columna 1 */
+}
+
+.column:nth-child(2) {
+    background-color: #d9d9d9; /* Color de fondo para la columna 2 */
+}
