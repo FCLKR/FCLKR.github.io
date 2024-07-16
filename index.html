@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <h1>< Jefferson A. Arenas Z. /></h1>
+        <h4>{ Welcome to my Portfolio }</h4>
     </header>
     <div class="container">
         <div class="profile-container">
@@ -16,30 +18,51 @@
                 <img src="Media/img_photo.jpg" alt="Perfil">
             </div>
             <div class="profile-description">
-                <h2>What's about me?</h2>
+                <h3>What's about me?</h3>
                 
                 <p id="description">As a software development technologist, I have a solid background in the design, implementation and maintenance of computer applications and systems.</p>
                 <div>
-                    <button id="changeDescriptionBtn">Conocer Más</button>
+                    <button id="changeDescriptionBtn" type="button" class="btn btn-warning">Conocer Más</button>
+            
                 </div>
-            </div>   
+            </div>
 
+             
         </div>
         
             
         <div class="column">
             <section id="projects">
-                <h2>Projects</h2>
-                <div class="project">
-                    <h3>Project 1</h3>
-                    <p>Description of project 1.</p>
-                    <a href="https://github.com/username/project1">View Project</a>
-                </div>
-                <div class="project">
-                    <h3>Project 2</h3>
-                    <p>Description of project 2.</p>
-                    <a href="https://github.com/username/project2">View Project</a>
-                </div>
+                <h2 style="margin-bottom: 5%; text-align: center;">Projects</h2>
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Media/Laravel_Logo.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Media/B$A_Logo.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
             </section>
         </div>
     </div>
@@ -50,7 +73,7 @@
     <footer>
         <p>&copy; 2024 My Portfolio</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
