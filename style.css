@@ -28,9 +28,6 @@ a {
 a:hover {
     text-decoration: underline;
 }
-.skills{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-}
 
 .project {
     border: 1px solid #ddd;
@@ -61,6 +58,19 @@ a:hover {
 }
 
 .profile-container {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    border: 5% solid #05b2f7;
+    border-radius: 10px;
+    max-width: 520px;
+    margin: 3% 0% 30% 0%;
+    margin-bottom: 5%;
+    background-color: #f5f5f5;
+    flex-direction: row; /* Alineación horizontal por defecto */
+}
+
+#profile-skills {
     display: flex;
     align-items: center;
     padding: 2%;
