@@ -28,3 +28,6 @@ button.addEventListener('mouseover', function() {
 button.addEventListener('mouseout', function() {
     button.classList.remove('move');
 });
+
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
