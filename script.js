@@ -8,11 +8,11 @@ button.addEventListener('click', function() {
     if (isDescriptionChanged) {
         // Si ya se ha cambiado, vuelve a la descripción original
         descriptionElement.textContent = "My skills range from programming in various languages and database management to the implementation of technological solutions that optimize business processes. I am able to work in all stages of the software lifecycle, from requirements analysis and planning to testing and deployment. My hands-on experience in real projects allows me to tackle complex problems with innovative and efficient solutions.";
-        button.textContent = "Volver";
+        button.textContent = "Back";
     } else {
         // Si no se ha cambiado, establece la nueva descripción
         descriptionElement.textContent = "As a software development technologist, I have a solid background in the design, implementation and maintenance of computer applications and systems.";
-        button.textContent = "Conocer Más";
+        button.textContent = "Know more";
     }
     
     // Alterna el estado
